@@ -1,9 +1,8 @@
-class CreateCocktails < ActiveRecord::Migration[5.2]
+
+class CreateCocktails < ActiveRecord::Migration[5.1]
   def change
     create_table :cocktails do |t|
-      t.text :name
-      t.string :indredients
-      t.integer :dose
+      t.string :name
 
       t.timestamps
     end
